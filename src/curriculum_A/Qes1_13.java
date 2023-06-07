@@ -131,11 +131,8 @@ public class Qes1_13 {
 		// /による変数の除算をし、コンソール出力
 		System.out.println(db / sh);
 		
-		// -による変数の減算をし、コンソール出力
-		System.out.println(by - sh);
-		
-		// 改行としてコンソール出力
-		System.out.println();
+		// -による変数の減算をし、コンソール出力 ＆ 改行コード出力
+		System.out.println(by - sh + "\n");
 		
 		/* 問5
 		 * 次のプログラムを実行すると「ハローJAVA2023」という結果が表示されます。
@@ -151,11 +148,8 @@ public class Qes1_13 {
 		// 整数型でnumを宣言し、20を代入
 		int num1 = 23;
 		
-		// "ハローJAVA"とnum + num1の結果を連結し、コンソール出力
-		System.out.println("ハローJAVA" + (num + num1));
-		
-		// 改行としてコンソール出力
-		System.out.println();
+		// "ハローJAVA"とnum + num1の結果を連結し、コンソール出力 ＆ 改行コード出力
+		System.out.println("ハローJAVA" + (num + num1) + "\n");
 		
 		/* 問6
 		 * 『』で囲われた人の情報を変数にして、formatの通りコンソールに出力してください
@@ -191,12 +185,8 @@ public class Qes1_13 {
 		// 変数と連結した文字列をコンソール出力
 		System.out.println("体重は" + weight + "kgです");
 		
-		// 変数と連結した文字列をコンソール出力
-		System.out.println("好きな食べ物は" + favFood + "です");
-		
-		
-		// 改行としてコンソール出力
-		System.out.println();
+		// 変数と連結した文字列をコンソール出力 ＆ 改行コード出力
+		System.out.println("好きな食べ物は" + favFood + "です\n");
 		
 		/* 問7
 		 * 6で作成した自己紹介に続いてBMIが出力されるようにしてください
@@ -213,12 +203,8 @@ public class Qes1_13 {
 		// BMIの小数点第2位を切り上げて代入し宣言
 		double bmi_ceil = (double)Math.round(bmi * 10) / 10;
 		
-		// 変数と連結した文字列をコンソール出力
-		System.out.println("BMIは" + bmi_ceil + "です");
-
-		
-		// 改行としてコンソール出力
-		System.out.println();
+		// 変数と連結した文字列をコンソール出力 ＆ 改行コード出力
+		System.out.println("BMIは" + bmi_ceil + "です\n");
 		
 		/* 問8
 		 * 6で宣言した変数に再代入し下記の通りコンソールに出力してください
@@ -270,12 +256,8 @@ public class Qes1_13 {
 		// 変数と連結した文字列をコンソール出力
 		System.out.println("好きな食べ物は" + favFood + "です");
 		
-		// 変数と連結した文字列をコンソール出力
-		System.out.println("BMIは" + bmi_ceil + "です");
-		
-		
-		// 改行としてコンソール出力
-		System.out.println();
+		// 変数と連結した文字列をコンソール出力 ＆ 改行コード出力
+		System.out.println("BMIは" + bmi_ceil + "です\n");
 
 		/* 問9
 		 * 8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力してください
@@ -320,12 +302,8 @@ public class Qes1_13 {
 		// 変数と連結した文字列をコンソール出力
 		System.out.println("好きな食べ物は" + favFood + "です");
 		
-		// 変数と連結した文字列をコンソール出力
-		System.out.println("BMIは" + bmi_ceil + "です");
-		
-		
-		// 改行としてコンソール出力
-		System.out.println();
+		// 変数と連結した文字列をコンソール出力 ＆ 改行コード出力
+		System.out.println("BMIは" + bmi_ceil + "です\n");
 		
 		/* 問10
 		 * 8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
@@ -334,7 +312,7 @@ public class Qes1_13 {
 		// 変数ageに再代入
 		age = 24;
 		
-		// ageが25以上ならtrue、それ以外ならfalseとなる条件式をコンソール出力
+		// ageが25以上ならtrue、それ以外ならfalseとなる条件式をコンソール出力 ＆ 改行コード出力
 		System.out.println(age >= 25);
 		
 		
@@ -344,6 +322,12 @@ public class Qes1_13 {
 		/* 問11
 		 * 8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
 		 */
+		
+		// 変数heightに再代入
+		height = 168.5;
+		
+		// 変数weightに再代入
+		weight = 64.2;
 		
 		// 整数型の変数ageを文字列型に変換して宣言
 		String ageStr = String.valueOf(age);
@@ -355,12 +339,8 @@ public class Qes1_13 {
 		String weightStr = String.valueOf(weight);
 		
 		
-		// 文字列型変数を連結し、コンソール出力
-		System.out.println(ageStr + heightStr + weightStr);
-		
-		
-		// 改行としてコンソール出力
-		System.out.println();
+		// 文字列型変数を連結し、コンソール出力 ＆ 改行コード出力
+		System.out.println(ageStr + heightStr + weightStr + "\n");
 		
 		/* 問12
 		 * 11で変換した【年齢・身長】を整数型に変換して出力してください
@@ -379,12 +359,9 @@ public class Qes1_13 {
 		// 変数ageIntをコンソール出力
 		System.out.println(ageInt);
 		
-		// 変数heightIntをコンソール出力
-		System.out.println(heightInt);
-		
-		
-		// 改行としてコンソール出力
-		System.out.println();
+		// 変数heightIntをコンソール出力 ＆ 改行コード出力
+		System.out.println(heightInt + "\n");
+
 		
 		/* 問13
 		 * 12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
