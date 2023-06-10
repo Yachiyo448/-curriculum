@@ -96,8 +96,8 @@ public class Qes1_3 {
 			String myHandStr = scanner.nextLine();
 			
 			// 入力内容が0～2以外の場合はエラーメッセージを出力
-			if ( myHandStr.matches("^[^0-2]+$") || myHandStr.length() <= 0 || myHandStr == null ) {
-				System.out.println("「0～2の数字を指定してください」");
+			if ( !myHandStr.matches("[012]")) {
+				System.out.println("「0～2の数字を指定してください」\n");
 			} else {
 				
 				// 文字列を整数型に変換し、添え字に代入

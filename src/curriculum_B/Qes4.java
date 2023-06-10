@@ -4,6 +4,10 @@ public class Qes4 {
 
 	public static void main(String[] args) {
 		
+		/* 問4
+		 * for文を使用して下記の通りに出力してください
+		 */
+		
 		// 1から9まで繰り返し処理
 		for (int i=1; i<10; i++) {
 			
