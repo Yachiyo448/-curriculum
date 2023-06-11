@@ -1,6 +1,8 @@
 package curriculum_B;
 
-//コンソール入力用のクラスをインポート
+// Map（連想配列）用のクラスをインポート
+import java.util.HashMap;
+// コンソール入力用のクラスをインポート
 import java.util.Scanner;
 
 public class Qes6 {
@@ -24,11 +26,15 @@ public class Qes6 {
 		 * 0～11のランダムな値を各商品の残り台数に代入
 		 ******************************************************/
 		
-		// テレビとディスプレイの初期台数を宣言
-		int tvDisplayCOunt = 11;
+		// 各商品の残り台数を格納する配列を宣言
+		HashMap<String, Integer> goods = new HashMap<>();
 		
-		
-		
+		goods.put("パソコン", (int)Math.floor(Math.random() * 12));
+		goods.put("冷蔵庫", (int)Math.floor(Math.random() * 12));
+		goods.put("扇風機", (int)Math.floor(Math.random() * 12));
+		goods.put("洗濯機", (int)Math.floor(Math.random() * 12));
+		goods.put("加湿器", (int)Math.floor(Math.random() * 12));
+		goods.put("テレビ", (int)Math.floor(Math.random() * 12));
 		
 				
 		// メッセージを出力
@@ -42,9 +48,32 @@ public class Qes6 {
 		// 入力した文字列を"、"で分割
 		String[] inputArr = input.split("、");
 		
+		for (String goodsName : inputArr) {
+			
+			switch (goodsName) {
+			case "パソコン":
+			case "冷蔵庫":
+			case "扇風機":
+			case "洗濯機":
+			case "加湿器":
+				System.out.println(goodsName + "の残り台数は" + goods.get(goodsName) + "台です\n");
+				break;
+				
+			case "テレビ":
+			case "ディスプレイ":
+				int displayCount = 11 - goods.get("テレビ");
+				System.out.println(goodsName.equals("テレビ") ? "テレビの残り台数は" + goods.get("テレビ") + "台です\n" : "ディスプレイの残り台数は" + displayCount + "台です\n");
+				break;
+				
+			default:
+				System.out.println("『" + goodsName + "』は指定の商品ではありません\n");
+				break;
+			}
+			
+		}
 		
-
-		
+		scanner.close();
+	
 	}
-
+	
 }
