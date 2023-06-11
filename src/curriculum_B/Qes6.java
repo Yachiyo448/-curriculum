@@ -66,7 +66,7 @@ public class Qes6 {
 				break;
 				
 			default:
-				System.out.println("『" + goodsName + "』は指定の商品ではありません\n");
+				System.out.println("『 " + goodsName + " 』は指定の商品ではありません\n");
 				break;
 			}
 			
