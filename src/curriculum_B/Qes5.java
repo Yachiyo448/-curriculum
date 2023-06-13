@@ -9,8 +9,7 @@ public class Qes5 {
 		 */
 
 		// 「課題5」を出力
-		System.out.println("課題5\n\n\n\n\n");
-
+		System.out.println("課題5\n\n");
 
 		// 1から9まで繰り返し処理
 		for (int i=1; i<10; i++) {
