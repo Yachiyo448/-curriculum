@@ -8,6 +8,10 @@ public class Qes5 {
 		 * for文を使用して下記の通りに出力してください
 		 */
 
+		// 「課題5」を出力
+		System.out.println("課題5\n\n\n\n\n");
+
+
 		// 1から9まで繰り返し処理
 		for (int i=1; i<10; i++) {
 
