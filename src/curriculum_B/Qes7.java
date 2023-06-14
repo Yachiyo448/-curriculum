@@ -83,7 +83,7 @@ public class Qes7 {
 
 				do {
 					// 教科ごとに点数を入力
-					System.out.print((i+1) + "人目の『" + subject[j] + "』の点数を入力してください :");
+					System.out.print((i + 1) + "人目の『" + subject[j] + "』の点数を入力してください :");
 
 					// コンソール入力用のインスタンスを生成
 					scanner = new Scanner(System.in);
@@ -124,13 +124,13 @@ public class Qes7 {
 		// 全体の平均点を格納する配列を宣言
 
 		// 各生徒の平均点を計算し出力
-		for (int i=0; i<studentNum; i++) {
+		for (int i = 0; i < studentNum; i++) {
 
 			// 合計点を格納する変数を宣言
 			int sum = 0;
 
 			// 配列内の点数を合計
-			for (int j=0; j<SUBJECT_NUM; j++) {
+			for (int j = 0; j < SUBJECT_NUM; j++) {
 				sum += studentScore[i][j];
 			}
 
@@ -138,7 +138,7 @@ public class Qes7 {
 			aveStudent[i] = (double)sum / (double)SUBJECT_NUM;
 
 			// 出力するテキストをフォーマットに従い生成
-			String message = String.format("%d人目の平均点は %.2f 点です。", i+1, aveStudent[i]);
+			String message = String.format("%d人目の平均点は %.2f 点です。", i + 1, aveStudent[i]);
 			System.out.println(message);
 
 		}
@@ -147,7 +147,7 @@ public class Qes7 {
 		System.out.print("\n");
 
 		// 各教科の平均点を計算し出力
-		for (int i=0; i<SUBJECT_NUM; i++) {
+		for (int i = 0; i < SUBJECT_NUM; i++) {
 
 			// 合計点を格納する変数を宣言
 			int sum = 0;

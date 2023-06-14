@@ -27,7 +27,7 @@ public class Qes1_3 {
 		Scanner scanner;
 
 		// ユーザー名の変数を宣言
-		String name = "";
+		String name;
 
 		// やり直しフラグの宣言
 		boolean redo = true;
@@ -109,8 +109,8 @@ public class Qes1_3 {
 				// コンソールに入力した文字列を代入
 				String myHandStr = scanner.nextLine();
 
-				// 入力内容が0～2以外かnullの場合はエラーメッセージを出力
-				if ( !myHandStr.matches("[012]") || myHandStr == null) {
+				// 入力内容が0～2以外か0文字以下かnullの場合はエラーメッセージを出力
+				if ( !myHandStr.matches("[012]") || myHandStr.length() <= 0 || myHandStr == null) {
 					System.out.println("「0～2の数字を指定してください」\n");
 				} else {
 
