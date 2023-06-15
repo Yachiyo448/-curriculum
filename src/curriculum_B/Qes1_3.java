@@ -41,13 +41,13 @@ public class Qes1_3 {
 			// ユーザー名にコンソールに入力した値を代入
 			name = scanner.nextLine();
 
-			// ユーザー名が10文字以上の場合、「名前を10文字以内にしてください」を出力
-			if ( name.length() >= 10 ) {
-				System.out.println("「名前を10文字以内にしてください」");
-
-				// ユーザー名が0文字以下かnullの場合、「名前を入力してください」を出力
-			} else if ( name.length() <= 0 || name == null ) {
+			// ユーザー名がnullか0文字以下の場合、「名前を入力してください」を出力
+			if (name == null || name.length() <= 0 ) {
 				System.out.println("「名前を入力してください」");
+
+				// ユーザー名が10文字以上の場合、「名前を10文字以内にしてください」を出力
+			} else if ( name.length() >= 10 ) {
+				System.out.println("「名前を10文字以内にしてください」");
 
 				// ユーザー名が正規表現パターンに当てはまる場合、「半角英数字のみで名前を入力してください」を出力
 			} else if ( name.matches("^[^A-Za-z0-9]+$")) {
@@ -109,8 +109,8 @@ public class Qes1_3 {
 				// コンソールに入力した文字列を代入
 				String myHandStr = scanner.nextLine();
 
-				// 入力内容が0～2以外か0文字以下かnullの場合はエラーメッセージを出力
-				if ( !myHandStr.matches("[012]") || myHandStr.length() <= 0 || myHandStr == null) {
+				// 入力内容がnullか0～2以外か0文字以下の場合はエラーメッセージを出力
+				if (myHandStr == null || !myHandStr.matches("[012]") || myHandStr.length() <= 0) {
 					System.out.println("「0～2の数字を指定してください」\n");
 				} else {
 
