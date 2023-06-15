@@ -43,7 +43,7 @@ public class Qes7 {
 
 
 			// 入力内容が数字以外の場合はエラーメッセージを出力
-			if ( !input.matches("[0-9]+") || input == null) {
+			if ( input == null || !input.matches("[0-9]+")) {
 				System.out.println("「数字を入力してください」\n");
 			} else {
 
@@ -91,7 +91,7 @@ public class Qes7 {
 					input = scanner.nextLine();
 
 					// 入力内容が数字以外の場合はエラーメッセージを出力
-					if ( !input.matches("[0-9]+")) {
+					if ( input == null || !input.matches("[0-9]+")) {
 						System.out.println("「数字を入力してください」\n");
 					} else {
 						// 入力した文字列から点数に変換
