@@ -59,7 +59,7 @@ public class Curriculum_New_1_18 {
 			sum += num;
 		}
 		// 合計値を要素数で割り、平均値を求める
-		double average = (double) sum / array.length;
+		double average = (double)sum / array.length;
 		System.out.println(average + "\n");
 		// メソッド呼び出し元に平均値を返す
 		return average;
