@@ -1,9 +1,10 @@
 package curriculum_New_question;
+import java.util.Random;
 
 public class Curriculum_New_1_18 {
 
 	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
-	public static void str_int_marge(String str, int in) {
+	public static void toString(String str, int in) {
 		// 受け取った引数2つを文字列として結合
 		String marge = str + " " + String.valueOf(in);
 		System.out.println(marge + "\n");
@@ -40,7 +41,8 @@ public class Curriculum_New_1_18 {
 		int[] array = new int[in];
 		for (int i = 0; i < array.length; i++) {
 			// 1～100のランダムな整数を要素に代入し出力
-			array[i] = (int) Math.ceil(Math.random() * 100);
+			Random random = new Random();
+			array[i] = random.nextInt(100) + 1;
 			System.out.println(array[i]);
 		}
 		System.out.println();
@@ -64,11 +66,11 @@ public class Curriculum_New_1_18 {
 	}
 
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
-	public static boolean judgeNum(double db) {
+	public static boolean isGreaterThan(double db) {
 		// 50以上ならtrueとなるブーリアン型変数を宣言
-		boolean judge = db >= 50;
+		boolean bool = db >= 50;
 		// メソッド呼び出し元に真偽を返す
-		return (judge);
+		return (bool);
 	}
 
 	/* 後で消す
@@ -83,7 +85,7 @@ public class Curriculum_New_1_18 {
 
 		// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
 		System.out.println("Q1:");
-		str_int_marge("Hello JavaSE", 11);
+		toString("Hello JavaSE", 11);
 
 		// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
 		System.out.println("Q2:");
@@ -111,7 +113,7 @@ public class Curriculum_New_1_18 {
 
 		// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
 		System.out.println("Q7:");
-		System.out.println(judgeNum(average));
+		System.out.println(isGreaterThan(average));
 
 	}
 }
